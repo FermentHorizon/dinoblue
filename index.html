@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Bluey Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Dinosaur Bluey Adventure</h1>
+            <div class="game-info">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="controls-info">Use Arrow Keys or WASD to move | Space to Pause</div>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div id="pauseOverlay" class="pause-overlay hidden">
+                <div class="pause-message">
+                    <h2>Game Paused</h2>
+                    <p>Press Space to Resume</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-footer">
+            <p>Guide Bluey through the prehistoric landscape!</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
